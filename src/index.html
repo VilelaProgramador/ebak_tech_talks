@@ -2,20 +2,85 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Tech Talks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="ebac">
-            <p>O maior evento de tecnologia do Brasil começa em: 10d 12h 05m 10s</p>
+            <p>O maior evento de tecnologia do Brasil começa em: <span id="contador"></span></p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos--item">
+                      <b>Localização</b>
+                      Allianz Parque - Barra Funda - São Paulo - SP
+                    </li>
+                    <li class="infos-bar__infos--item">
+                      <b>Preço</b>
+                      A partir de R$ 99,00
+                    </li>
+                    <li class="infos-bar__infos--item">
+                      <b>Quando</b>
+                      26/04/2025 - 09h00 às 18h00
+                    </li>
+                  </ul>
+                <a href="#" class="button button--primary">Comprar Ingressos</a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event_details_title">Front-end</h2>
+                <p class="event_details_description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, illum ea qui officia eaque aut accusamus deserunt nesciunt minus. Impedit quidem laboriosam nemo ut expedita vel vero numquam consequatur.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event_details_title">UI/UX</h2>
+                <p class="event_details_description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, illum ea qui officia eaque aut accusamus deserunt nesciunt minus. Impedit quidem laboriosam nemo ut expedita vel vero numquam consequatur.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event_details_title">Data Science</h2>
+                <p class="event_details_description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, illum ea qui officia eaque aut accusamus deserunt nesciunt minus. Impedit quidem laboriosam nemo ut expedita vel vero numquam consequatur.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event_details_title">Backend</h2>
+                <p class="event_details_description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim, illum ea qui officia eaque aut accusamus deserunt nesciunt minus. Impedit quidem laboriosam nemo ut expedita vel vero numquam consequatur.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
